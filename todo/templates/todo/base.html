@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'todo/base_style.css' %}">
+    <title>TODO_Main</title>
+</head>
+<header>
+    <div class = "up_header">
+        <div class = "text_container">
+            <p class = "app_title">TODO<span>.</span></p>
+        </div>
+        <a class = "logout" href="{% url 'accounts:logout' %}" style="text-decoration:none;"><h3>ログアウト</h3></a>
+    </div>
+    <div class = "under_header">
+        <p class = "today_weather">{{day}} : {{weather}}</p>
+    </div>
+</header>
+<body>
+    {% if user.is_authenticated %}
+    <div>
+        <div class = "category_cont">
+            <h2>Category.</h2>
+            <div class = "category">
+                <ul>
+                    <a class = "top" href="{% url 'todo:index' %}" style="text-decoration:none;">
+                        Top
+                    </a>
+                    {% for category in category_list %}
+                    <a href="{% url 'todo:todo_category' category %}" style="text-decoration:none;">
+                        {{ category }}
+                    </a>
+                    {% endfor %}
+                </ul>
+            </div> 
+        </div>
+        <div class = "create_form">
+            <a href="{% url 'todo:create' %}" style="text-decoration:none;">新規作成</a>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </div>
+    {% else %}
+        <div class = "background">
+            <div class = "container">
+                <div class = "comment_cont">
+                    <h1 class = "comment">こんにちは、まずはログインしてください！</h1>
+                </div>
+                <div class = "new_accounts_cont">
+                    <a href="{% url 'accounts:new_accounts' %}" style="text-decoration:none;" class = "new_accounts">新規登録</a>
+                </div>
+                <div class = "login_cont">
+                    <a href="{% url 'accounts:top' %}" style="text-decoration:none;" class = "login">ログイン</a>
+                </div>
+            </div>
+        </div>
+    {% endif %}   
+</body>
+<footer>
+        
+</footer>
+</html>

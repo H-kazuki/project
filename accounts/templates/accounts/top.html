@@ -1,0 +1,51 @@
+{% load static %}
+{% load widget_tweaks %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{% static 'accounts/top_style.css' %}">
+	<title>TODO_Top</title>
+</head>
+<header>
+	
+</header>
+<body>
+	<div class = "container">
+		<div class = "text_container">
+			<div class = "text">
+				<p class = "title">TODO<span>.</span></p>
+				<p class = "copy">What are you doing today?</p>
+			</div>
+		</div>
+		<div class = "main_container">
+			<div class = "new_accounts_cont">
+				<a href="{% url 'accounts:new_accounts' %}" class = "new_accounts" style="text-decoration:none;">新規登録</a>
+			</div>
+			<div class = "login_container">
+				<form action="" method="POST">
+					{% csrf_token %}
+					<h2 class = "login_title">ログイン</h2>
+					<div class = "login_form">
+						<div class = "user_name_cont">
+							<b>ユーザー名</b>
+							<p>{{ form.username|add_class:"form" }}</p>
+						</div>
+						<div class = "password_cont">
+							<b>パスワード</b>
+							<p>{{ form.password|add_class:"form" }}</p>
+						</div>
+					</div>
+					<div class = "button">
+						<button type="submit">ログイン</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+<footer>
+	
+</footer>
+</html>

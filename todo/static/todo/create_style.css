@@ -1,0 +1,144 @@
+html {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	flex-direction: column;
+	background: white url("images/todo_form_img.jpg") no-repeat;
+	background-size: cover;
+}
+
+
+.login_background {
+	height: 100%;
+	background-color: #FFF;
+	background: rgba(255,255,255,0.4);
+}
+
+.login_container {
+	padding-top: 100px;
+	margin: 0;
+}
+
+.create_todo {
+	width: 370px;
+	background-color: #FDF5E6;
+	padding: 30px 10px;
+	border-radius: 3px;
+	margin: 0 auto;
+	box-shadow: 2px 2px 5px #999999;
+}
+
+h2 {
+	width:360px;
+	color: #FF4F50;
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: solid 1px;
+	border-color: #AAAAAA;
+	margin: 0 auto;
+}
+
+.input_form {
+	width: 310px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.input {
+	padding: 0;
+	margin: 20px 0;
+}
+
+.input_form p, b {
+	color: #FF4F50;
+	
+	padding: 0;
+	margin: 0;
+}
+
+.title_form, .content_form {
+	width: 310px;
+}
+
+.title_form, .category_form {
+	height: 30px;
+}
+
+.button {
+	margin-top: 60px;
+	text-align: center;
+}
+
+button {
+	height: 40px;
+	width: 80px;
+	font-size: 15px;
+	color: #FFF;
+	background-color: #FF4F50;
+	border: none;
+	border-radius: 3px;
+	opacity: 0.7;
+}
+
+button:hover {
+	opacity: 1.0;
+}
+
+button:focus {
+	outline: 0;
+}
+
+.logout_background {
+	height: 100%;
+	padding:  0 0 0;
+	margin: 0;
+	background: rgba(0,0,0,0.6);
+	z-index: 10;
+}
+
+.logout_container {
+	padding: 0;
+	padding: 200px 0 0 0;
+}
+
+.comment_cont {
+	color: #FFF;
+	text-align: center;
+}
+
+.login_cont,
+.new_accounts_cont {
+	width: 500px;
+	background-color: #FFF;
+	padding:0;
+	border-radius: 3px;
+	margin: 50px auto 0 auto;
+	box-shadow: 2px 2px 5px #444444;
+}
+
+
+.new_accounts,
+.login {
+	font-size: 20px;
+	color: #FFF;
+	text-align: center;
+	padding: 30px 0;
+	border-radius: 3px;
+	margin: 50px 0;
+	display: block;
+	opacity: 0.7;
+}
+
+.new_accounts {
+	background-color: #FF4F50;
+}
+
+.login {
+	background-color: #4169E1;
+}

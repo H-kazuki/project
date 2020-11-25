@@ -1,0 +1,52 @@
+{% load static %}
+{% load widget_tweaks %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{% static 'accounts/new_accounts_style.css' %}">
+	<title>TODO_NewAccounts</title>
+</head>
+<body>
+	<div class = "background">
+		<div class = "big_container">
+			<div class = "container">
+				<h2 class = "new_accounts_title">新規登録</h2>
+				<div class = "main_container">
+					<form action="" method="post">
+						{% csrf_token %}
+						<div class = "name_form">
+							<b class = "name_text">ユーザー名</b>
+							<p class = "name">{{ form.username|add_class:"form" }}</p>
+							<p class = "guide">半角アルファベット、半角数字、@/./+/-/_ で150文字以下にしてください。</p>
+						</div>
+						<div class = "email_form">
+							<b class = "email_text">メールアドレス</b>
+							<p class = "email">{{ form.email|add_class:"form" }}</p>
+						</div>
+						<div class = "pw1_form">
+							<b class = "pw1_text">パスワード</b>
+							<p class = "pw1">{{ form.password1|add_class:"form" }}</li>
+							<div class = "guide">
+								<li>あなたの他の個人情報と似ているパスワードにはできません。</li>
+								<li>パスワードは最低 8 文字以上必要です。</li>
+								<li>よく使われるパスワードにはできません。</li>
+								<li>数字だけのパスワードにはできません。</li>
+							</div>
+						</div>
+						<div class = "pw2_form">
+							<b class = "pw2_text">パスワード(再入力)</b>
+							<p class = "pw2">{{ form.password2|add_class:"form" }}</p>
+							<p class = "guide">確認のため、再度パスワードを入力してください。</p>
+						</div>
+						<div class = "button">
+							<button type="submit">登録</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

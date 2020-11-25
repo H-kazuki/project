@@ -1,0 +1,124 @@
+body {
+	height: 100%;
+	margin: 0;
+	flex-direction: column;
+	background: white url("images/login_img.jpg") no-repeat;
+	background-size: cover;
+}
+
+.text_container {
+	height: 200px;
+	width: 100%;
+}
+
+.text {
+	height: 150px;
+	width: 100%;
+	padding-top: 20px;
+}
+
+.title {
+	font-size: 70px;
+	padding: 0 20px;
+	margin: 0;
+}
+
+span {
+	color: red;
+}
+
+.copy {
+	color: #FFF;
+	font-size: 30px;
+	padding: 0 20px;
+	margin: 0;
+}
+
+.main_container {
+	height: 300px;
+	width: 100%;
+}
+
+.new_accounts_cont {
+	width: 450px;
+	background-color: #FFF;
+	border-radius: 3px;
+	margin: 0 auto;
+	box-shadow: 2px 2px 5px #444444;
+}
+
+.new_accounts {
+	font-size: 20px;
+	color: #FFF;
+	background-color: #FF4F50;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 3px;
+	margin: 0 auto;
+	display: block;
+	opacity: 0.7;
+}
+
+.new_accounts:hover {
+	opacity: 1.0;
+}
+
+.login_container {
+	height: 360px;
+	width: 450px;
+	background-color: #fff;
+	border-radius: 3px;
+	margin: 10px auto;
+	box-shadow: 2px 2px 5px #444444;
+	background: rgba(255,255,255,0.9);
+}
+
+.login_title {
+	text-align: center;
+	padding: 18px 0 10px 0;
+	border-bottom: solid 1px;
+	border-color: #AAAAAA;
+	margin: 0 20px;
+} 
+.login_form {
+	font-size: 17px;
+}
+
+.login_form p {
+	padding: 0;
+	margin: 0 ;
+}
+
+.user_name_cont,
+.password_cont {
+	width: 258px;
+	background-color:;
+	margin: 20px auto;
+}
+
+.form {
+	height: 40px;
+	width: 250px;
+}
+
+.button {
+	width: 250px;
+	background-color: #FFF;
+	text-align: center;
+	margin: 30px auto 0 auto;
+}
+
+button {
+	height: 50px;
+	width: 250px;
+	font-size: 20px;
+	color: #FFF;
+	background-color: #4169E1;
+	border: none;
+	border-radius: 3px;
+	opacity: 0.7;
+}
+
+button:hover {
+	opacity: 1.0;
+}
