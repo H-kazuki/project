@@ -43,7 +43,8 @@ def edit(request, id):
 	obj = Todo.objects.get(id = id)
 	if (request.method == 'POST'):
 		todo = TodoForm(request.POST, instance = obj)
-		todo.save()
+		if todo.is_valid():
+			todo.save()
 		return redirect(to = '/todo')
 
 	context = {
