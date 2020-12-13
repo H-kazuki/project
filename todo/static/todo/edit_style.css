@@ -13,18 +13,18 @@ body {
 	background-size: cover;
 }
 
-.login_background {
+.login-background {
 	height: 100%;
 	background-color: #FFF;
 	background: rgba(255,255,255,0.4);
 }
 
-.login_container {
+.login-container {
 	padding-top: 100px;
 	margin: 0;
 }
 
-.edit_todo {
+.edit-todo {
 	width: 370px;
 	background-color: #F0FFF0;
 	padding: 30px 10px;
@@ -43,7 +43,7 @@ h2 {
 	margin: 0 auto;
 }
 
-.edit_form {
+.edit-form {
 	width: 310px;
 	text-align: left;
 	margin: 0 auto;
@@ -54,17 +54,17 @@ h2 {
 	margin: 20px 0;
 }
 
-.edit_form p, b {
+.edit-form p, b {
 	color: #20B2AA;
 	padding: 0;
 	margin: 0;
 }
 
-.title_form, .content_form {
+.title-form, .content-form {
 	width: 310px;
 }
 
-.title_form, .category_form {
+.title-form, .category-form {
 	height: 30px;
 }
 
@@ -92,7 +92,7 @@ button:focus {
 	outline: 0;
 }
 
-.logout_background {
+.logout-background {
 	height: 100%;
 	padding:  0 0 0;
 	margin: 0;
@@ -100,18 +100,18 @@ button:focus {
 	z-index: 10;
 }
 
-.logout_container {
+.logout-container {
 	padding: 0;
 	padding: 200px 0 0 0;
 }
 
-.comment_cont {
+.comment-cont {
 	color: #FFF;
 	text-align: center;
 }
 
-.login_cont,
-.new_accounts_cont {
+.login-cont,
+.new-accounts-cont {
 	width: 500px;
 	background-color: #FFF;
 	padding:0;
@@ -121,7 +121,7 @@ button:focus {
 }
 
 
-.new_accounts,
+.new-accounts,
 .login {
 	font-size: 20px;
 	color: #FFF;
@@ -133,7 +133,7 @@ button:focus {
 	opacity: 0.7;
 }
 
-.new_accounts {
+.new-accounts {
 	background-color: #FF4F50;
 }
 

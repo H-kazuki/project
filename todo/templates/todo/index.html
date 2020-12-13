@@ -1,7 +1,7 @@
 <!-- /todo/templates/todo/index.html -->
 {% extends 'todo/base.html' %}
 {% block content %}
-    <div class = "todo_list">
+    <div class = "todo-list">
         <h2>Todos.</h2>
 
         {% if category %}
@@ -12,7 +12,7 @@
         <div class = "todos">
             <p class = "title">{{ todos.title }}</p>
             <p class = "contents">{{todos.contents}}</p>
-            <div class = "command_con">
+            <div class = "command-cont">
                 <form method = "POST" action = "{% url 'todo:delete' todos.id %}">
                     {% csrf_token %}
                     <button class = "delete">削除</button>
@@ -23,7 +23,7 @@
                     <button class = "edit">更新</button>
                 </form>
 
-                <p class = "created_at">{{ todos.created_at }}</p>
+                <p class = "created-at">{{ todos.created_at }}</p>
             </div>  
         </div> 
         {% endfor %}

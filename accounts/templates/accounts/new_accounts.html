@@ -10,23 +10,23 @@
 </head>
 <body>
 	<div class = "background">
-		<div class = "big_container">
+		<div class = "big-container">
 			<div class = "container">
-				<h2 class = "new_accounts_title">新規登録</h2>
-				<div class = "main_container">
+				<h2 class = "new-accounts-title">新規登録</h2>
+				<div class = "main-container">
 					<form action="" method="post">
 						{% csrf_token %}
-						<div class = "name_form">
-							<b class = "name_text">ユーザー名</b>
+						<div class = "name-form">
+							<b class = "name-text">ユーザー名</b>
 							<p class = "name">{{ form.username|add_class:"form" }}</p>
 							<p class = "guide">半角アルファベット、半角数字、@/./+/-/_ で150文字以下にしてください。</p>
 						</div>
-						<div class = "email_form">
-							<b class = "email_text">メールアドレス</b>
+						<div class = "email-form">
+							<b class = "email-text">メールアドレス</b>
 							<p class = "email">{{ form.email|add_class:"form" }}</p>
 						</div>
-						<div class = "pw1_form">
-							<b class = "pw1_text">パスワード</b>
+						<div class = "pw1-form">
+							<b class = "pw1-text">パスワード</b>
 							<p class = "pw1">{{ form.password1|add_class:"form" }}</li>
 							<div class = "guide">
 								<li>あなたの他の個人情報と似ているパスワードにはできません。</li>
@@ -35,8 +35,8 @@
 								<li>数字だけのパスワードにはできません。</li>
 							</div>
 						</div>
-						<div class = "pw2_form">
-							<b class = "pw2_text">パスワード(再入力)</b>
+						<div class = "pw2-form">
+							<b class = "pw2-text">パスワード(再入力)</b>
 							<p class = "pw2">{{ form.password2|add_class:"form" }}</p>
 							<p class = "guide">確認のため、再度パスワードを入力してください。</p>
 						</div>

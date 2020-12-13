@@ -9,11 +9,11 @@
 </head>
 <body>
     {% if user.is_authenticated %}
-    <div class = "login_background">
-        <div class = "login_container">
-            <div class = "create_todo">
+    <div class = "login-background">
+        <div class = "login-container">
+            <div class = "create-todo">
                 <h2>新規作成</h2>
-                <div class = "input_form">
+                <div class = "input-form">
                     <form method="POST">
                         {% csrf_token %}
                         <div class = "input">
@@ -37,13 +37,13 @@
         </div>
     </div>
     {% else %}
-    <div class = "logout_background">
-        <div class = "logout_container">
-            <div class = "comment_cont">
+    <div class = "logout-background">
+        <div class = "logout-container">
+            <div class = "comment-cont">
                 <h1 class = "comment">こんにちは、まずはログインしてください！</h1>
             </div>
-            <div class = "new_accounts_cont">
-                <a href="{% url 'accounts:new_accounts' %}" style="text-decoration:none;" class = "new_accounts">新規登録</a>
+            <div class = "new-accounts-cont">
+                <a href="{% url 'accounts:new_accounts' %}" style="text-decoration:none;" class = "new-accounts">新規登録</a>
             </div>
             <div class = "login_cont">
                 <a href="{% url 'accounts:top' %}" style="text-decoration:none;" class = "login">ログイン</a>

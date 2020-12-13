@@ -21,7 +21,7 @@ body {
 	
 }
 
-.big_container {
+.big-container {
 	padding-top: 70px;
 }
 
@@ -34,7 +34,7 @@ body {
 	box-shadow: 2px 2px 5px #444444;
 }
 
-.new_accounts_title {
+.new-accounts-title {
 	width: 410px;
 	text-align: center;
 	padding: 18px 0 10px 0;
@@ -43,24 +43,24 @@ body {
 	margin: 0 auto;
 }
 
-.main_container{
+.main-container{
 	width: 360px;
 	margin: 0 auto;
 }
 
-.name_form,
-.email_form,
-.pw1_form,
-.pw2_form {
+.name-form,
+.email-form,
+.pw1-form,
+.pw2-form {
 	width: 358px;
 	padding-top: 20px;
 	margin: 0 auto;
 }
 
-.email_text,
-.name_text,
-.pw1_text,
-.pw2_text {
+.email-text,
+.name-text,
+.pw1-text,
+.pw2-text {
 	padding: 0;
 	margin: 2px 0;
 }

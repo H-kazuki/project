@@ -7,20 +7,20 @@
     <title>TODO_Main</title>
 </head>
 <header>
-    <div class = "up_header">
-        <div class = "text_container">
-            <p class = "app_title">TODO<span>.</span></p>
+    <div class = "title-header">
+        <div class = "text-container">
+            <p class = "app-title">TODO<span>.</span></p>
         </div>
         <a class = "logout" href="{% url 'accounts:logout' %}" style="text-decoration:none;"><h3>ログアウト</h3></a>
     </div>
-    <div class = "under_header">
-        <p class = "today_weather">{{day}} : {{weather}}</p>
+    <div class = "weather-header">
+        <p class = "today-weather">{{day}} : {{weather}}</p>
     </div>
 </header>
 <body>
     {% if user.is_authenticated %}
     <div>
-        <div class = "category_cont">
+        <div class = "category-cont">
             <h2>Category.</h2>
             <div class = "category">
                 <ul>
@@ -35,7 +35,7 @@
                 </ul>
             </div> 
         </div>
-        <div class = "create_form">
+        <div class = "create-form">
             <a href="{% url 'todo:create' %}" style="text-decoration:none;">新規作成</a>
         </div>
         {% block content %}
@@ -44,13 +44,13 @@
     {% else %}
         <div class = "background">
             <div class = "container">
-                <div class = "comment_cont">
+                <div class = "comment-cont">
                     <h1 class = "comment">こんにちは、まずはログインしてください！</h1>
                 </div>
-                <div class = "new_accounts_cont">
-                    <a href="{% url 'accounts:new_accounts' %}" style="text-decoration:none;" class = "new_accounts">新規登録</a>
+                <div class = "new-accounts-cont">
+                    <a href="{% url 'accounts:new_accounts' %}" style="text-decoration:none;" class = "new-accounts">新規登録</a>
                 </div>
-                <div class = "login_cont">
+                <div class = "login-cont">
                     <a href="{% url 'accounts:top' %}" style="text-decoration:none;" class = "login">ログイン</a>
                 </div>
             </div>

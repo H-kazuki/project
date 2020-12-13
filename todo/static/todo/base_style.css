@@ -22,13 +22,13 @@ header {
 	z-index: 5;
 }
 
-.up_header {
+.title-header {
 	background-color: #EEEEEE;
 	border-bottom: solid 1px;
 	border-color: #AAAAAA;
 }
 
-.text_container {
+.text-container {
 	height: 56px;
 	width: 300px;
 	display: inline-block;
@@ -36,7 +36,7 @@ header {
 	margin: 0;
 }
 
-.app_title {
+.app-title {
 	font-size: 35px;
 	padding: 0;
 	margin: 4px 0 0 14px;
@@ -60,7 +60,7 @@ span {
 	opacity: 1.0;
 }
 
-.under_header {
+.weather-header {
 	height: 28px;
 	background-color: #F0FFFF;
 	padding: 0;
@@ -70,7 +70,7 @@ span {
 	opacity: 0.9;
 }
 
-.today_weather {
+.today-weather {
 	height: 29px;
 	width: 300px;
 	color: #4682B4;
@@ -80,7 +80,7 @@ span {
 	margin: 0 auto;
 }
 
-.category_cont {
+.category-cont {
 	height: 130px;
 	width: 800px;
 	padding-top: 40px;
@@ -101,13 +101,13 @@ span {
 	margin-right: 50px;	
 }
 
-.create_form {
+.create-form {
 	height: 50px;
 	width: 800px;
 	margin: 0 auto;
 }
 
-.create_form a {
+.create-form a {
 	color: #FFF;
 	background-color: #FF4F50;
 	padding: 10px 40px;
@@ -115,16 +115,16 @@ span {
 	opacity: 0.7;
 }
 
-.create_form a:hover {
+.create-form a:hover {
 	opacity: 1.0;
 }
 
-.todo_list {
+.todo-list {
 	width: 800px;
 	margin: 20px auto;
 }
 
-.todo_list h5 {
+.todo-list h5 {
 	font-size: 18px;
 }
 
@@ -158,11 +158,11 @@ h2 {
 	margin: 0 10px;
 }
 
-.command_con {
+.command-cont {
 	margin-right: 5px;
 }
 
-.created_at {
+.created-at {
 	text-align: right;
 	color: #AAAAAA;
 	font-size: 14px;
@@ -208,13 +208,13 @@ button:focus {
 	margin: 200px 0 0 0;
 }
 
-.comment_cont {
+.comment-cont {
 	color: #FFF;
 	text-align: center;
 }
 
-.login_cont,
-.new_accounts_cont {
+.login-cont,
+.new-accounts-cont {
 	width: 500px;
 	background-color: #FFF;
 	padding:0;
@@ -224,7 +224,7 @@ button:focus {
 }
 
 
-.new_accounts,
+.new-accounts,
 .login {
 	font-size: 20px;
 	color: #FFF;
@@ -236,7 +236,7 @@ button:focus {
 	opacity: 0.7;
 }
 
-.new_accounts {
+.new-accounts {
 	background-color: #FF4F50;
 }
 
